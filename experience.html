@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html lang="PT-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"content="width=device-width, initial-scale=1">
+
+  <title>Hotel Descalvado</title>
+
+  <!-- Import Styles -->
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Quattrocento:400,700" rel="stylesheet">
+
+  <!-- Import Scripts -->
+  <script src="js/script.js"></script>
+</head>
+
+<!--
+Lembretes:
+
+* Colocar e-mail no footer
+* Colocar o logo do hotel com index 1 em cima da nav-bar
+* Fixar a navbar nas outras paginas
+
+-->
+<body>
+
+<header>
+
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header img-logo">
+        <div class="navbar-brand">
+          <a href="index.html" style="display: block; width: 220px; height: 160px;"></a>
+        </div>
+
+      <button type="button" class="navbar-toggle collapsed"
+          data-toggle="collapse" data-target="#barraNavegacao">
+
+          <span class="sr-only">Barra de Navegacao SM/XS</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+    </div>
+
+  <div class="collapse navbar-collapse" id="barraNavegacao">
+    <div>
+      <ul class="nav navbar-nav navbar-right">
+        <li> <a class="navbar-links" href="index.html">HOME</a> </li>
+        <li> <a class="navbar-links" href="location.html">LOCALIZAÇÃO</a> </li>
+        <li> <a class="navbar-links" href="experience.html">EXPERIÊNCIA</a> </li>
+        <li class="button reservationButton"> <a style="color: #fff; text-align: center;" href="reservations.html">RESERVAS</a> </li>
+      </ul>
+    </div>
+  </div> <!--End #barraNavegacao-->
+
+  </div> <!-- End .container -->
+</nav>
+
+</header>
+
+  <div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:1935831681">
+    <span class="glyphicon glyphicon-earphone"></span>
+    Recepção 01
+    </a>
+  </div>
+
+  <div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:1935931133">
+    <span class="glyphicon glyphicon-earphone"></span>
+    Recepção 02
+    </a>
+  </div>
+  <div id="xs-deliver" class="text-center visible-xs">* 24 horas</div>
+
+  <div id="main-content" class="container"></div>
+
+<!-- tirar padding/margin do header, main ou footer para nao ficar espacamento branco -->
+<main>
+  <div>
+    <img src="images/Fachada2.jpg">
+  </div>
+
+  <div class="divider"></div>
+
+<!-- Comeco dos topicos -->
+
+<!-- Topic Header -->
+  <section>
+    <div class="topics-header">
+      <div class="container text-center">
+        <header>
+          <h2>História Descalvadence</h2>
+        </header>
+        <div class="text-section-description">
+          <p>Com sua fundação no ano de 1XXX, Descalvado...<br/>
+          Throughout our hotels and resorts, we create a journey that stimulates all five senses, so that our guests can fully immerse in the Langham experience.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+<!-- Topic Body -->
+  <div>
+    <div class="container-fluid">
+      <div class="topic-alternating-list">
+        <div class="topic-wrapper">
+          <div class="topic row">
+            <div class="col-md-6 topic-img-style animated fadeIn" style="background-image: url('images/historia/contact.jpg');">
+            </div>
+            <div class="col-md-6 topic-description-style">
+              <p>teste</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="topic-wrapper">
+          <div class="topic row">
+            <div class="col-md-6 topic-description-style">
+              <p>teste</p>
+            </div>
+            <div class="col-md-6 topic-img-style" style="background-image: url('images/historia/contact.jpg');">
+            </div>
+          </div>
+        </div>
+
+        <div class="topic-wrapper">
+          <div class="topic row">
+            <div class="col-md-6 topic-img-style" style="background-image: url('images/historia/contact.jpg');">
+              <p>teste</p>
+            </div>
+            <div class="col-md-6 topic-description-style">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</main>
+
+<footer class="panel-footer"> <!-- Essa classe ja tem algum padding e background -->
+	<div class="container"> <!-- Para ficar coerente com todo o site, visto ele inteiro ter content -->
+		<div class="row">
+			<section id="hours" class="col-sm-4"> <!--We're using here 3 sm-4 columns porque 4+4+4 = 12 = 100% de width -->
+				<span>Horário de Funcionamento:</span><br>
+				Sun-Thurs: 11:15am - 10:00pm<br>
+				Fri: 11:15am - 2:30pm<br>
+				Saturday Closed
+				<hr class="visible-xs">
+			</section>
+			<section id="address" class="col-sm-4">
+				<span>Endereço:</span><br>
+				Rua Barão do Descalvado, 415<br>
+				Descalvado - Centro
+				<p>* Ao lado da Praça da Igreja Matriz</p>
+				<hr class="visible-xs">
+			</section>
+			<section id="testimonials" class="col-sm-4">
+				<p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+				<p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+			</section>
+		</div>
+			<div class="text-center">&copy; Copyright Diego Martinelli Magno 2018</div>
+	</div>
+</footer>
+
+<!-- JS Files -->
+<script src="bootstrap/js/jquery-2.1.4.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/ajax-utils.js"></script>
+<script src="bootstrap/js/script.js"></script>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</body>
+
+</html>
