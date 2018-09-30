@@ -13,7 +13,7 @@ body {
   margin: 0px !important;
 }
 
-/** HEADER **/
+/** Header **/
 #header-nav {
   background-color: white;
   border-radius: 0;
@@ -27,6 +27,12 @@ body {
   margin-top: 0;
   position: absolute;
   z-index: 999;
+}
+
+.navbar-hotel-logo{
+  display: block;
+  width: 220px;
+  height: 160px;
 }
 
 .navbar-links{
@@ -43,14 +49,14 @@ body {
 }
 
 .reservationButton:hover{
-  background: red;
+  background: brown;
 }
 
-.selected:hover{
+/* .selected:hover{
   position: relative;
   top: 20px;
   left: 20px;
-}
+} */
 
 /* Hamburguer Menu Image */
 
@@ -70,94 +76,39 @@ body {
 
 
 
-/* START MAIN */
+/** START MAIN **/
 
 
-/* Expirience.html */
-
-.divider{
-  height: 5px;
-  background: white;
-}
-
-p{
-  color: #967858;
-}
-
-.topics-header{
-  background: #e7e7e7;
-}
-
-.topic-img-style{
-  background-position: center;
-  height: 480px;
-  background-color: grey;
-}
-
-.topic-description-style{
-  background-position: center;
-  height: 480px;
-  background-color: #f2f2f2;
-}
-
-/* Location.html */
+/** Location.html **/
 
 #mainMap{
-  background: url('../images/map.jpg') no-repeat;
+  background: url('../images/reservations.jpg') no-repeat;
   background-position: center;
+  height: 1000px;
 }
 
-#mainImage{
+#mainImage{ /* Main background image */
   width: 100%;
   height: 100%;
 }
 
-#localizacao{
-  text-align: center;
+.locationText{
+  background: #a5793c;
+  padding-top: 5px;
+  color: white;
+  letter-spacing: 0.05em;
+  font-size: 20px;
+  font-style: bold;
+  padding-left: 5px;
 }
 
-
-/* END MAIN */
-
-/* FOOTER */
-.panel-footer {
-  margin-top: 30px;
-  padding-top: 35px;
-  padding-bottom: 30px;
-  background-color: #222;
-  border-top: 0;
-}
-.panel-footer div.row {
-  margin-bottom: 35px;
-}
-#hours, #address {
-  line-height: 2;
-}
-#hours > span, #address > span {
-  font-size: 1.3em;
-}
-#address p {
-  color: #557c3e;
-  font-size: .8em;
-  line-height: 1.8;
-}
-#testimonials {
-  font-style: italic;
-}
-#testimonials p:nth-child(2) {
-  margin-top: 25px;
-}
-/* END FOOTER */
-
-
-
-/* Quadrados (tiles) */
+/* Map Tile (Quadrado do mapa) */
 #map-tile {
   height: 250px;
   width: 100%;
   margin-bottom: 15px;
   position: relative;
-  border: 2px solid #3F0C1F;
+  /* border: 1px solid #3F0C1F; */
   overflow: hidden;
 }
 #map-tile:hover {
@@ -178,6 +129,130 @@ p{
 }
 /* END HOME PAGE */
 
+/** Experience.html **/
+
+/* Cor dos textos */
+/* Principal em marrom */
+h2{
+  color: #967858 !important;
+  letter-spacing: 0.12em;
+}
+
+/* Topic Area */
+.topics-header{
+  padding-top: 15px;
+  padding-bottom: 25px;
+  background: #e7e7e7;
+}
+
+.topic-img-style{
+  width: 620px;
+  height: 401px;
+  background-color: grey;
+}
+
+.topic-description-style{
+  height: 401px;
+  background-color: white;
+}
+
+.topic-description-header{
+  color: #967858;
+}
+
+.topic-description-text{
+  color: #646464;
+}
+
+/* Guest Area */
+
+.divider{
+  height: 5px;
+  background: white;
+}
+
+#guestsBackground{
+  background: url('../images/guests2.jpeg');
+  height: 800px;
+}
+
+.guest-img-text{
+  padding-top: 350px;
+  color: white;
+  letter-spacing: 0.09em;
+  font-size: 40px;
+  font-style: bold;
+  padding-left: 5px;
+}
+
+.button-reserve{
+  display: block;
+  background: #a5793c;
+  height: 50px;
+  padding-top: 10px;
+}
+
+.button-reserve-text{
+  color: white;
+  font-size: 25px;
+  letter-spacing: 0.05em;
+}
+
+.button-reserve-text:hover{
+  color: white;
+  font-size: 25px;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+
+/** Reservation.html **/
+
+#reservationImage{
+  background: url('../images/reservations.jpg') no-repeat;
+  background-position: center;
+  height: 1000px;
+}
+
+
+/* END MAIN */
+
+/** FOOTER **/
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+
+#hours, #address {
+  line-height: 2;
+}
+
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+
+#testimonials {
+  font-style: italic;
+}
+
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+/* END FOOTER */
+
+/** Responsive Area **/
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {

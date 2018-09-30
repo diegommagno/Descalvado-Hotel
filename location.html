@@ -1,43 +1,143 @@
-<div id="mainMap">
-  <div class="text-center" style="margin-top: 5px;">LOCALIZAÇÃO</div>
-<!-- Map and content tiles start -->
-  <div style="height: 100px;"></div> <!-- Div para espaçamento entre foto e continuação do main -->
+<!DOCTYPE HTML>
+<html lang="PT-BR">
 
-	<div id="home-tiles" class="row" style="margin: 15px; height: 500px;">
-		<div> <!--MAP-->
-			<a href="https://goo.gl/maps/uLQKkRCEPyC2" target="_blank"></a>
-				<div id="map-tile" style="height: 50%">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1254.1292905756347!2d-47.621460205635294!3d-21.9032279983393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b80f4229a92e41%3A0x55ee636bcdbae789!2sR.+Bar%C3%A3o+do+Descalvado%2C+415+-+Centro%2C+Descalvado+-+SP%2C+13690-000!5e0!3m2!1sen!2sbr!4v1533574372264" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-					<span>mapa</span>
-				</div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"content="width=device-width, initial-scale=1">
+
+  <title>Hotel Descalvado</title>
+
+  <!-- Import Styles -->
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Quattrocento:400,700" rel="stylesheet">
+
+  <!-- Import Scripts -->
+  <script src="js/script.js"></script>
+</head>
+
+<!--
+Lembretes:
+
+* Colocar e-mail no footer
+* Fixar a navbar nas outras paginas
+
+-->
+<body>
+
+<header>
+
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+        <div class="navbar-brand">
+          <a class="navbar-links" href="index.html">Hotel Descalvado</a>
+        </div>
+
+      <button type="button" class="navbar-toggle collapsed"
+          data-toggle="collapse" data-target="#barraNavegacao">
+
+          <span class="sr-only">Barra de Navegacao SM/XS</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+    </div>
+
+  <div class="collapse navbar-collapse" id="barraNavegacao">
+    <div>
+      <ul class="nav navbar-nav navbar-right">
+        <li> <a class="navbar-links" href="index.html">HOME</a> </li>
+        <li> <a class="navbar-links" href="location.html">LOCALIZAÇÃO</a> </li>
+        <li> <a class="navbar-links" href="experience.html">EXPERIÊNCIA</a> </li>
+        <li class="button reservationButton"> <a style="color: #fff; text-align: center;" href="reservations.html">RESERVAS</a> </li>
+      </ul>
+    </div>
+  </div> <!--End #barraNavegacao-->
+
+  </div> <!-- End .container -->
+</nav>
+
+</header>
+
+  <div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:1935831681">
+    <span class="glyphicon glyphicon-earphone"></span>
+    Recepção 01
+    </a>
+  </div>
+
+  <div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:1935931133">
+    <span class="glyphicon glyphicon-earphone"></span>
+    Recepção 02
+    </a>
+  </div>
+  <div id="xs-deliver" class="text-center visible-xs">* 24 horas</div>
+
+  <div id="main-content" class="container"></div>
+
+<!-- tirar padding/margin do header, main ou footer para nao ficar espacamento branco -->
+<main>
+  <div id="mainMap" class="center animated fadeIn">
+    <div class="locationText">Informações
+      <ul>
+        <li>teste</li>
+      </ul>
+    </div>
+
+
+  <!-- Map and content tiles start -->
+    <div style="height: 100px;"></div> <!-- Div para espaçamento entre foto e continuação do main -->
+
+  	<div id="home-tiles" style="margin: 15px; height: 500px;">
+  		<div> <!--MAP-->
+  			<a href="https://goo.gl/maps/uLQKkRCEPyC2" target="_blank"></a>
+  				<div id="map-tile" style="height: 50%">
+  					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1254.1292905756347!2d-47.621460205635294!3d-21.9032279983393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b80f4229a92e41%3A0x55ee636bcdbae789!2sR.+Bar%C3%A3o+do+Descalvado%2C+415+-+Centro%2C+Descalvado+-+SP%2C+13690-000!5e0!3m2!1sen!2sbr!4v1533574372264" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  				</div>
+  		</div>
+  	</div>
+  </div>
+    <!-- Como fazer: escolher uma localização, clicar no menu das 3 barrinhas da esquerda, Share or embed map, copy the link and past in the href, copy the embed map and put the iframe in the map-tile div, change the iframe width to 100% and height to 250px. -->
+    <!-- Map and content tiles end -->
+</main>
+
+<footer class="panel-footer"> <!-- Essa classe ja tem algum padding e background -->
+	<div class="container"> <!-- Para ficar coerente com todo o site, visto ele inteiro ter content -->
+		<div class="row">
+			<section id="hours" class="col-sm-4"> <!--We're using here 3 sm-4 columns porque 4+4+4 = 12 = 100% de width -->
+				<span>Horário de Funcionamento:</span><br>
+				Sun-Thurs: 11:15am - 10:00pm<br>
+				Fri: 11:15am - 2:30pm<br>
+				Saturday Closed
+				<hr class="visible-xs">
+			</section>
+			<section id="address" class="col-sm-4">
+				<span>Endereço:</span><br>
+				Rua Barão do Descalvado, 415<br>
+				Descalvado - Centro
+				<p>* Ao lado da Praça da Igreja Matriz</p>
+				<hr class="visible-xs">
+			</section>
+			<section id="testimonials" class="col-sm-4">
+				<p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+				<p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+			</section>
 		</div>
+			<div class="text-center">&copy; Copyright Diego Martinelli Magno 2018</div>
 	</div>
-</div>
-  <!-- Como fazer: escolher uma localização, clicar no menu das 3 barrinhas da esquerda, Share or embed map, copy the link and past in the href, copy the embed map and put the iframe in the map-tile div, change the iframe width to 100% and height to 250px. -->
-  <!-- Map and content tiles end -->
+</footer>
 
+<!-- JS Files -->
+<script src="bootstrap/js/jquery-2.1.4.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/ajax-utils.js"></script>
+<script src="bootstrap/js/script.js"></script>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</body>
 
-
-  <li>
-    <a href="index.html">Home</a>
-  </li>
-
-  <li>
-    <a href="location.html">Localização</a>
-  </li>
-
-  <li>
-    <a href="experience.html">História</a>
-  </li>
-
-  <li>
-    <a href="apartments.html">Acomodações</a>
-  </li>
-
-  <li>
-    <a href="contact.html">Contato</a>
-  </li>
-
-  <li>
-    <a href="reservations.html">Reservas</a>
-  </li>
+</html>
